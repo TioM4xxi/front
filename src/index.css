@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header {
+  
+  background-color: black;
+  text-align: center;
+  padding-bottom: 20px;
+  
+}
+
+.logindiv {
+
+  text-align: center;
+  background-color: gray;
+  padding: 50px;  
+  
+
+}
+
+
+
+
+
+.buttonregisterlogin {
+
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+ 
+  
+
+}
+
+
+
+
+
+
+  
+.dropdown {
+
+
+  display: inline-block;
+  
+
+}
+
+.dropdowncontent {
+
+
+  display: none;
+  position: absolute;
+
+}
+
+.dropdowncontent button {
+
+  
+  position: relative;
+  display: block;
+  width: 120px;
+  height: max-content;
+  
+  
+  
+  
+
+}
+
+.divcad {
+
+  margin-top: 50px;
+  text-align: center;
+  background-color: gray;
+  height: fit-content;
+  padding: 20px;
+
+
+}
+
+.divLogado {
+
+  text-align: center;
+
+
+}
+
+
+.buttonheader {
+
+  margin-top: 100px;
+  background-color: green;
+  border: 1px solid white;
+  width: max-content;
+  width: 120px;
+  height: 30px;
+  margin-right: 10px;
+  
+
+}
+
+.logmsg {
+
+  text-align: center;
+  
+
+
+
+}
+                  
+
+
+.inputlogindiv input {
+
+
+  display: block;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  
+
+}
+
+.divlistusers {
+
+  text-align: center;
+
+}
+
+.inputcad {
+
+  display: block;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+
+}
+
+.divlist {
+
+margin-top: 25px;
+text-align: center;
+border: 1px solid black;
+
+
+
+}
+
+.listmudas {
+
+  text-align: center;
+
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+
+}
+
+
+h1 {
+
+  margin: 0;
+
+}
+
+.divuserlist {
+
+
+  background-color: gray;
+  margin-top: 150px;
+  
+  
+
+}
+
+body {
+
+  color: green;
+
+}
+
+
+
+.buttonheader:hover {
+
+  background-color: gray;
+
+
+}
+
+.dropdown:hover .dropdowncontent {
+
+
+  display: block;
+  
+
+}
+
+
