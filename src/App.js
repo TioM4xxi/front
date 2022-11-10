@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import "./index.css"
 import Userlist from "./pages/userlist"
 import Login from "./pages/login"
 import Register from "./pages/register"
@@ -18,6 +17,9 @@ function App() {
     <div> 
             
                     {header}
+
+
+                   
 
                   <Router>
 

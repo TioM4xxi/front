@@ -4,8 +4,8 @@ import { useState, useEffect } from "react"
 
 
 function deleteUser(userid) {
-
-    fetch('http://localhost:3001/deleteUser', {
+    
+    fetch(process.env.REACT_APP_API_URL + process.env.REACT_APP_PORT + '/deleteUser', {
 
         method: 'POST',
         headers: {
@@ -42,11 +42,10 @@ function Userlist() {
     
     
 
-  
     
         useEffect(() => {
 
-            fetch('http://localhost:3001/userlist', {
+            fetch(process.env.REACT_APP_API_URL + process.env.REACT_APP_PORT + '/userlist', {
 
             method: 'GET',
             headers: {

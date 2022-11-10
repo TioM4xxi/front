@@ -12,10 +12,11 @@ function Register() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [telefone, setTelefone] = useState('')
-    
+    const URL = process.env.REACT_APP_API_URL + process.env.REACT_APP_PORT + '/createUser'
+
     const createUser = () => {
 
-       fetch('http://localhost:3001/createUser', {
+       fetch(URL, {
 
             method: 'POST',
             headers: {

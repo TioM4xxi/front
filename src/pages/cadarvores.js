@@ -10,10 +10,10 @@ export default function Cadarvores() {
     const usernamedono = localStorage.getItem("sessionusername")
     const nomedono = localStorage.getItem("sessionname")
     const auth = localStorage.getItem("auth")
-
+    
     function cadastrar() {
 
-        fetch('http://localhost:3001/cadarvores', {
+        fetch(process.env.REACT_APP_API_URL + process.env.REACT_APP_PORT + '/cadarvores', {
 
             method: 'POST',
             headers: {

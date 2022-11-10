@@ -6,12 +6,11 @@ import { useState, useEffect } from "react"
 export default function Minhasmudas() {
 
 const [listOfMudas, setListOfMudas] = useState([])
-const username = localStorage.getItem("sessionusername")
 
 
 useEffect(() => {
 
-    fetch('http://localhost:3001/minhasmudasarvores', {
+    fetch(process.env.REACT_APP_API_URL + process.env.REACT_APP_PORT + '/minhasmudasarvores', {
 
     method: 'GET',
     headers: {

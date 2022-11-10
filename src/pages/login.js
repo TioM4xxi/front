@@ -9,10 +9,12 @@ export default function Login() {
     const [password, setPassword] = useState("")
     const [listOfUsers, setListOfUsers] = useState([])
     let auth = localStorage.getItem("auth")
+    const URL = process.env.REACT_APP_API_URL + process.env.REACT_APP_PORT + '/login'
+
 
 const handleSubmit = () => {
 
-    fetch('http://localhost:3001/login', {
+    fetch(URL, {
 
         method: 'POST',
         headers: {
@@ -27,6 +29,7 @@ const handleSubmit = () => {
         console.log('Auth: ' + response.auth)
         console.log('Token: ' + response.token)
         console.log('Username: ' + response.username)
+        console.log("URL: " + URL)
         localStorage.setItem("token", response.token)
         localStorage.setItem("auth", response.auth)
         localStorage.setItem("sessionusername", response.username)
@@ -34,8 +37,6 @@ const handleSubmit = () => {
         
 
             if(response.auth) {
-
-                window.location.reload(false)
 
             }
           
